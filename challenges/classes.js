@@ -26,7 +26,7 @@ class CubeMaker extends CuboidMaker2 {
   constructor(length, width, height) {
     super(length, width, height)
   }
-// we don't need to create a new metjod for calculating cube's volume because it is the same as a cuboid
+// we don't need to create a new method for calculating cube's volume because it is the same as a cuboid
   cubeSurface() {
     if ( ((this.length + this.width + this.height) / 3 ) === this.length) {
       return this.length * this.length * 6
