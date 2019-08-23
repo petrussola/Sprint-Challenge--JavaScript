@@ -84,7 +84,7 @@ The resulting contact information should have a space between the first name and
 Name email@example.com
 
 Log the result of your new array. */
-const contactInfo = [];
+const contactInfo = graduates.map( (item,i) => `${graduates[i].first_name} ${graduates[i].email}`);;
 console.log(contactInfo);
 
 
