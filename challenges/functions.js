@@ -11,8 +11,6 @@ function consume (param1, param2, cb) {
   console.log(cb(param1, param2));
 }
 
-consume(2,4,console.log);
-
 
 /* Step 2: Create several functions to callback with consume();
   * Create a function named add that returns the sum of two numbers
