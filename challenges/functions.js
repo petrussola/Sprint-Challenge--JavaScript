@@ -7,8 +7,8 @@
   * In the body of the function return the callback with the two parameters that you created
 */
 
-function consume (num1, num2, cb) {
-  return cb(num1 * num2)
+function consume (param1, param2, cb) {
+  console.log(cb(param1, param2));
 }
 
 consume(2,4,console.log);
@@ -32,9 +32,9 @@ function greeting (firstName, lastName) {
 
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
-// consume(2,2,add); // 4
-// consume(10,16,multiply); // 160
-// consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
+consume(2,2,add); // 4
+consume(10,16,multiply); // 160
+consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
 
 
 // ==== Closures ==== 
