@@ -30,13 +30,26 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+`.forEach`loops through the array, applies a function to each array item and doesn't modify the original arral. On the other hand, `.map` lopps through the array, applying a function to each item of the array, and creating, as a result, a new array.
+
 2. What is the difference between a function and a method?
+
+Method is a function inside an object. As a result, we call methods with the dot or bracket notation to an object. Function is a more general concept, they are a set of instructions in your code that output something.
 
 3. What is closure?
 
+Good question :) Closure is what delimits the scope of a variable. Variables can be global or local. Local inside a chunk of code (i.e. if statement) or inside a function. Variable in the global scope can be accessed by the code inside an enclose, but not the other way around. A closure is like a tinted window car: from the inside you can see outside but outside they cannto see inside. 
+
 4. Describe the four rules of the 'this' keyword.
 
+- Window object - this in a global scope refers to the window object, which can be described as everything in JS.
+- Implicit binding - when this is referred inside a method, this refers to the method itself. i.e. if we have a method that references this.name, this refers to the property name of the object where the method is located.
+- New keyword binding - when we instantiate an object using the constructor, JS is in the background creating an empty object. This empty object, that we don't see, takes the shape of this = {}. That is why we write this.property when creating a constructor class.
+- Explicit binding - this happens when we call .call, .apply or .bind to an object. These methods take 2 arguments, the first being `this`, which refers to the new object that this should point to.
+
 5. Why do we need super() in an extended class?
+
+super() allows the subclass to inherit the properties of the parent class.
 
 ## Project Set up
 
@@ -85,3 +98,5 @@ In your solutions, it is essential that you follow best practices and produce cl
 ## Stretch Problems
 
 There are a few stretch problems found throughout the files, don't work on them until you are finished with MVP requirements!
+
+Pere Sola Claver - 08:06 UK time
